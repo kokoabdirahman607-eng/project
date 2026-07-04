@@ -1,0 +1,286 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.7;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#0d1b2a;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo h1{
+    color:white;
+    font-size:30px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    transition:.4s;
+}
+
+nav ul li a:hover,
+.active{
+    color:#ffc107;
+}
+
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
+    url("../images/hotel.jpg") center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-text{
+    color:white;
+}
+
+.hero-text h2{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    background:#ffc107;
+    color:#000;
+    padding:14px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#0d6efd;
+    color:white;
+}
+
+.page{
+    width:90%;
+    max-width:1100px;
+    margin:70px auto;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.page h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#0d6efd;
+    font-size:35px;
+}
+
+.page p{
+    font-size:18px;
+}
+
+.services{
+    padding:70px 8%;
+}
+
+.services h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+
+.room-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.room{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+.room img{
+    width:100%;
+    height:230px;
+    object-fit:cover;
+}
+
+.room h3,
+.room p{
+    padding:15px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.5s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.page ul{
+    list-style:none;
+}
+
+.page ul li{
+    background:#f1f1f1;
+    margin:15px 0;
+    padding:18px;
+    border-left:6px solid #0d6efd;
+    border-radius:8px;
+    font-size:18px;
+}
+
+form{
+    max-width:550px;
+    margin:auto;
+}
+
+form input,
+form select{
+    width:100%;
+    padding:15px;
+    margin:12px 0;
+    border:1px solid #ccc;
+    border-radius:10px;
+    font-size:17px;
+}
+
+form button{
+    width:100%;
+    padding:15px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    transition:.4s;
+}
+
+form button:hover{
+    background:#ffc107;
+    color:black;
+}
+
+.testimonial{
+    padding:70px 8%;
+}
+
+.review{
+    background:white;
+    margin:25px auto;
+    max-width:700px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+}
+
+footer{
+    background:#0d1b2a;
+    color:white;
+    text-align:center;
+    padding:25px;
+    margin-top:60px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    text-align:center;
+}
+
+nav ul li{
+    margin:12px 0;
+}
+
+.hero-text h2{
+    font-size:35px;
+}
+
+.hero-text p{
+    font-size:18px;
+}
+
+.page{
+    padding:25px;
+}
+
+}
+.video-container{
+    max-width: 800px;
+    margin: 30px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px #c3333c;
+    border: 1px solid #eae5da;
+}
